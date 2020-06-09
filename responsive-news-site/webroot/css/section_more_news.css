@@ -4,6 +4,25 @@
   padding-inline-end: 4.5rem;
   padding-block-end: 4.5rem;
 }
+#section_more_news {
+display:grid;
+column-gap: 3rem;
+grid-template-columns: repeat(2, 1fr);
+grid-template-areas: "header header"
+                     "first-longform second-longform"
+                     "first-longform second-longform"
+                     "first-longform second-longform"
+}
+#section_more_news > header {
+grid-area: header;
+}
+#section_more_news > .article_longform:first-of-type {
+grid-area: first-longform;
+}
+#section_more_news > .article_longform:last-of-type {
+grid-area: second-longform;
+}
+
 
 #section_more_news > header {
   padding-block-end: 2.5rem;
@@ -28,3 +47,8 @@
 #section_more_news .category a {
   color: #FA6980;
 }
+.article_longform {
+  display: grid;
+  grid-template-columns: ;
+}
+
