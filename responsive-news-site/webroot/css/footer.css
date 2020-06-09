@@ -58,3 +58,29 @@ body > footer a {
   justify-content: space-between;
   max-width: 8.5rem;
 }
+@media (min-width: 768px) {
+  .link_primary{
+    display: block;
+  }
+  body > footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 2rem;
+    column-gap: 2rem;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+    padding: 4.5rem;
+  }
+  .links_site {
+    columns: 3;
+    margin: 0;
+  }
+  .links_social {
+    order: 4;
+    align-self: center;
+    padding-inline-start: 3rem;
+  }
+  .form_subscribe {
+    order: 3;
+  }
+}
