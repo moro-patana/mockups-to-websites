@@ -15,7 +15,6 @@
 }
 
 .section_container article:not(.article_card) {
-  margin-block-start: 2.5rem;
   margin-block-end: 2.5rem;
 }
 
