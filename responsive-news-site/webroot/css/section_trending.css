@@ -1,6 +1,6 @@
 #section_trending {
   display:grid;
-  column-gap: 3rem;
+  column-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "header header"
                        "first-swatch second-swatch"
