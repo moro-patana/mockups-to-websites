@@ -1,5 +1,8 @@
 #section_more_news {
   background-color: #fff;
+  padding-inline-start: 4.5rem;
+  padding-inline-end: 4.5rem;
+  padding-block-end: 4.5rem;
 }
 
 #section_more_news > header {
