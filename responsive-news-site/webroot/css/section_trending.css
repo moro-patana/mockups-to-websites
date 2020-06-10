@@ -20,7 +20,7 @@
 #section_trending > .article_swatch:last-of-type {
   grid-area: second-swatch;
 }
-.article_swatch:nth-of-type(2) ~ article {
+s.article_swatch:nth-of-type(2) ~ article {
     display: none;
   }
 
