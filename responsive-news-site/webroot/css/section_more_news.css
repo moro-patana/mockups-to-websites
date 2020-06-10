@@ -4,6 +4,7 @@
   padding-inline-end: 4.5rem;
   padding-block-end: 4.5rem;
 }
+@media (min-width: 768px) {
 #section_more_news {
 display:grid;
 column-gap: 3rem;
@@ -22,7 +23,7 @@ grid-area: first-longform;
 #section_more_news > .article_longform:last-of-type {
 grid-area: second-longform;
 }
-
+}
 
 #section_more_news > header {
   padding-block-end: 2.5rem;
