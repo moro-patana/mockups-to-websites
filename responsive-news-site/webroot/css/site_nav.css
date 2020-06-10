@@ -54,7 +54,7 @@ body > nav > h2 > label {
 body > nav > ul {
   list-style: none;
   display: flex;
-/*  flex-direction: column;*/
+  flex-direction: column;
 }
 
 body > nav > ul a {
@@ -116,7 +116,7 @@ body > nav > ul a:hover {
     transition: none
   }
 
-Switch from column to row flex
+/* Switch from column to row flex */
   body > nav > ul {
     flex-direction: row;
   }
