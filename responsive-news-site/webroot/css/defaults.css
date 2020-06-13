@@ -46,3 +46,28 @@ nav > ul {
   margin: 0;
   padding: 0;
 }
+@media (max-width:1440px) {
+body > main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "featured featured more-new"
+                       "trending trending trending"
+                       "happening happening happening";
+}
+#section_featured {
+  display: flex;
+  grid-area: featured;
+}
+#section_more_news {
+  display: grid;
+  grid-area: more-new;
+}
+#section_trending {
+  grid-area: trending;
+  columns: 3;
+}
+#section_happening_now {
+  grid-area: happening;
+  columns: 2;
+}
+}
