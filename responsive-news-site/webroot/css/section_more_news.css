@@ -23,7 +23,7 @@ grid-area: first-longform;
 #section_more_news > .article_longform:last-of-type {
 grid-area: second-longform;
 }
-}
+}*/
 
 #section_more_news > header {
   padding-block-end: 2.5rem;
