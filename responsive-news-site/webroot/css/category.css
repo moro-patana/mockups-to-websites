@@ -7,4 +7,5 @@
 .category a {
   text-decoration: none;
   color: inherit;
+  padding-block-end: 8rem;
 }
