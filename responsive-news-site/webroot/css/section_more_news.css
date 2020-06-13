@@ -52,4 +52,29 @@ grid-area: second-longform;
   display: grid;
   grid-template-columns: ;
 }
+@media (min-width:1040px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "featured more-new"
+                         "trending trending"
+                         "happening happening";
+  }
+  #section_featured {
+    display: flex;
+    grid-area: featured;
+  }
+  #section_more_news {
+    display: block;
+    grid-area: more-new;
+  }
+  #section_trending {
+    grid-area: trending;
+    columns: 3;
+  }
+  #section_happening_now {
+    grid-area: happening;
+    columns: 2;
+  }
+  }
 
