@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+ @media (min-width: 768px) {
 #section_trending {
   display:grid;
   column-gap: 2rem;
@@ -20,7 +20,7 @@
 #section_trending > .article_swatch:last-of-type {
   grid-area: second-swatch;
 }
-s.article_swatch:nth-of-type(2) ~ article {
+#section_trending .article_swatch:nth-of-type(2) ~ article {
     display: none;
   }
 
@@ -28,4 +28,35 @@ s.article_swatch:nth-of-type(2) ~ article {
 }
 #section_trending article {
   background-color: #fff;
+}
+@media (min-width: 1040px) {
+  #section_trending {
+    display:grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "header header header"
+                         "first-swatch second-swatch third-swatch"
+                         "first-swatch second-swatch third-swatch"
+                         "first-swatch second-swatch third-swatch";
+    padding-inline-start: 4.5rem;
+    padding-inline-end: 4.5rem;
+    padding-block-end: 4.5rem;
+  }
+  #section_trending > header {
+    grid-area: header;
+  }
+  #section_trending > .article_swatch:first-of-type {
+    grid-area: first-swatch;
+  }
+  #section_trending > .article_swatch:nth-of-type(2) {
+    grid-area: second-swatch;
+  }
+  #section_trending > .article_swatch:nth-of-type(3) {
+    grid-area: third-swatch;
+  }
+
+  #section_trending .article_swatch:nth-of-type(2) ~ article {
+    display: flex;
+  }
+
 }
