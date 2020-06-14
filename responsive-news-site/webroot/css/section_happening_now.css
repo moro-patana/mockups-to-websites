@@ -62,20 +62,31 @@
   #section_happening_now > header {
     grid-area: header;
   }
+  #section_happening_now .article_card {
+
+    height: 430px;
+  }
   #section_happening_now .article_card:first-of-type {
   grid-area: first-article-card;
   }
   #section_happening_now .article_card:nth-of-type(2) {
     grid-area: second-article-card;
+    margin-block-start: -22rem;
+    justify-content: center;
   }
   #section_happening_now .article_simple:nth-of-type(1) {
     grid-area: first-article-simple;
   }
   #section_happening_now .article_simple:nth-of-type(2) {
     grid-area: second-article-simple;
+    padding-block-start: 2rem;
   }
 
   #section_happening_now > .article_card + .article_card + .article_simple + .article_simple ~ .article_simple {
     display: flex;
+}
+#section_happening_now .article_simple {
+  width: 360px;
+  height: 272px;
 }
 }
