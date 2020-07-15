@@ -37,6 +37,7 @@ grid-area: second-longform;
 }
 
 #section_more_news article p {
+  font-weight: 400;
   color: #A6ADB4;
 }
 
@@ -74,7 +75,6 @@ grid-area: second-longform;
   }
   #section_happening_now {
     grid-area: happening;
-    columns: 2;
   }
   }
 
