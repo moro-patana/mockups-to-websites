@@ -48,8 +48,10 @@
 @media (min-width: 1040px) {
   #section_happening_now {
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header header"
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+/*    grid-template-areas: "header header header"
                          "first-article-card first-article-card first-article-simple"
                          "first-article-card first-article-card first-article-simple"
                          "first-article-card first-article-card second-article-simple"
@@ -61,32 +63,51 @@
   }
   #section_happening_now > header {
     grid-area: header;
-  }
+  }*/
   #section_happening_now .article_card {
-
+    width: 760px;
     height: 430px;
+
   }
   #section_happening_now .article_card:first-of-type {
-  grid-area: first-article-card;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
   }
   #section_happening_now .article_card:nth-of-type(2) {
-    grid-area: second-article-card;
-    margin-block-start: -22rem;
-    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 7;
+
+  }
+  #section_happening_now .article_simple {
+    width: 360px;
+    height: 272px;
   }
   #section_happening_now .article_simple:nth-of-type(1) {
-    grid-area: first-article-simple;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
   }
   #section_happening_now .article_simple:nth-of-type(2) {
-    grid-area: second-article-simple;
-    padding-block-start: 2rem;
-  }
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
 
+  }
+  #section_happening_now .article_simple:nth-of-type(3) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+
+  }
   #section_happening_now > .article_card + .article_card + .article_simple + .article_simple ~ .article_simple {
     display: flex;
-}
-#section_happening_now .article_simple {
-  width: 360px;
-  height: 272px;
 }
 }
